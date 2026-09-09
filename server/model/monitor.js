@@ -1952,7 +1952,7 @@ class Monitor extends BeanModel {
      * @returns {string[]} Names, outermost first.
      */
     static getAllPathInTree(monitorID, monitorName, tree) {
-        const path = [ monitorName ];
+        const path = [monitorName];
         let current = tree.parent.get(monitorID);
         const seen = new Set();
 
